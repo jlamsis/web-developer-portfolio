@@ -1,0 +1,344 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-boxs;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #0a0a0b;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+header .container .company-name {
+  font-family: "Prata", serif;
+}
+header .container nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container nav ul li {
+  list-style-type: none;
+  margin: 1.5rem;
+}
+header .container nav ul li a {
+  color: #adadad;
+  font-family: "Inter", sans-serif;
+}
+header .container nav ul li a:hover {
+  color: #ffffff;
+}
+header .container .action-link {
+  background-color: #fbe850;
+  padding: 1rem 2rem;
+}
+header .container .action-link a {
+  font-family: "Prata", serif;
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+header .container .action-link a:hover {
+  color: #adadad;
+}
+header .container .hamburger {
+  display: none;
+}
+
+main {
+  background: #0a0a0b;
+}
+main .container .pitch-content {
+  width: 60%;
+  margin-top: 1rem;
+}
+main .container .pitch-content .goal {
+  font-family: "Prata", serif;
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+main .container .pitch-content p {
+  font-family: "Inter", sans-serif;
+  color: #adadad;
+  line-height: 1.5;
+  text-align: justify;
+  line-height: 1.5rem;
+  width: 82.5%;
+}
+main .container .company-logo {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container .sample-work {
+  display: flex;
+  gap: 6rem;
+  margin-bottom: 3rem;
+}
+main .container .sample-work .samples {
+  display: flex;
+  flex-direction: column;
+}
+main .container .sample-work .samples img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1.5rem;
+}
+main .container .sample-work .samples-title {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Prata", serif;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+main .container .sample-work .samples-title a {
+  color: #ffffff;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+main .container .sample-work .samples-title a:visited {
+  color: #ffffff;
+}
+main .container .sample-work .samples-title a:hover {
+  color: #adadad;
+}
+main .container .sample-work .samples-description {
+  font-family: "Inter", sans-serif;
+  color: #adadad;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.experience {
+  background-color: #2e3038;
+}
+.experience .container {
+  padding: 3rem 0rem;
+  display: flex;
+  gap: 8.5rem;
+}
+.experience-title {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Prata", serif;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+.experience-content p {
+  font-family: "Inter", sans-serif;
+  color: #adadad;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 1.75rem;
+}
+.experience-content p:last-child {
+  margin-bottom: 0;
+}
+
+.invitation {
+  padding: 3rem 0rem;
+  background: #0a0a0b;
+}
+.invitation-container {
+  width: 50%;
+}
+.invitation-title {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Prata", serif;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+.invitation-desc {
+  font-family: "Inter", sans-serif;
+  color: #adadad;
+  line-height: 1.5;
+  text-align: justify;
+  width: 75%;
+}
+.invitation .action-link {
+  background-color: #fbe850;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  width: 7rem;
+  text-align: center;
+}
+.invitation .action-link a {
+  font-family: "Prata", serif;
+  color: #000000;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+.invitation .action-link a:hover {
+  color: #adadad;
+}
+
+footer {
+  background: #2e3038;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .company-name {
+  font-family: "Prata", serif;
+  color: #ffffff;
+}
+footer .container .social-icons a {
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+  header .container {
+    padding-top: 3rem;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container .action-link {
+    display: none;
+  }
+  header .container .hamburger {
+    display: inline-block;
+  }
+  main .container .pitch-content {
+    width: 100%;
+  }
+  main .container .pitch-content p {
+    width: 100%;
+  }
+  main .container .company-logo {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+  }
+  main .container .company-logo img {
+    margin: 1rem;
+  }
+  main .container .sample-work {
+    flex-direction: column;
+  }
+  main .container .sample-work .samples img {
+    overflow: hidden;
+  }
+  .experience .container {
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+  .experience-title {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Prata", serif;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .experience-content p {
+    font-family: "Inter", sans-serif;
+    color: #adadad;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  .experience-content p:last-child {
+    margin-bottom: 0;
+  }
+  .invitation-container {
+    width: 100%;
+  }
+  .invitation-desc {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+  header .container {
+    padding-top: 3rem;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container .action-link {
+    display: none;
+  }
+  header .container .hamburger {
+    display: inline-block;
+  }
+  main .container .pitch-content {
+    width: 100%;
+  }
+  main .container .pitch-content p {
+    width: 100%;
+  }
+  main .container .company-logo {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+  }
+  main .container .company-logo img {
+    margin: 1rem;
+  }
+  main .container .sample-work {
+    flex-direction: column;
+  }
+  main .container .sample-work .samples img {
+    overflow: hidden;
+  }
+  .experience .container {
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+  .experience-title {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Prata", serif;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .experience-content p {
+    font-family: "Inter", sans-serif;
+    color: #adadad;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  .experience-content p:last-child {
+    margin-bottom: 0;
+  }
+  .invitation-container {
+    width: 100%;
+  }
+  .invitation-desc {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

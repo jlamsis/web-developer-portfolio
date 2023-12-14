@@ -1,0 +1,47 @@
+header{
+    background: $main-background;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $primary-color;
+
+        .company-name{
+            font-family: $heading-font;
+        }
+
+        nav{
+            
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                li{
+                    list-style-type: none;
+                    margin: 1.5rem;
+
+                    a{
+                        color: $secondary-color;
+                        font-family: $contents-font;
+
+                        &:hover{
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .action-link{
+            @include  action;
+        }
+
+        .hamburger{
+            display: none;
+        }
+    }
+}

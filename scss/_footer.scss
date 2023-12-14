@@ -1,0 +1,20 @@
+footer{
+    background: $secondary-background;
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .company-name{
+            font-family: $heading-font;
+            color: $primary-color;
+        }
+
+        .social-icons{
+            a{
+                margin-left:1rem;
+            }
+        }
+    }
+}

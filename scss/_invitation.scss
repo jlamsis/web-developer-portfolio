@@ -1,0 +1,25 @@
+.invitation{
+    padding:3rem 0rem;
+    background: $main-background;
+
+    &-container{
+        width: 50%;
+    }
+
+    &-title{
+        @include sub-heading;
+    }
+
+    &-desc{
+        @include contents;
+        width: 75%;
+    }
+
+    .action-link{
+        @include action;
+        margin-top: 1.5rem;
+        width: 7rem;
+        text-align: center;
+    }
+
+}

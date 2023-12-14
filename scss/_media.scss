@@ -1,0 +1,198 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+//@media only screen (max-width: 1024px) {
+    .container{
+        width:90%;
+    }
+
+    header{
+            
+        .container{
+            padding-top: 3rem;
+        
+            nav{
+                display: none;
+            }
+    
+            .action-link{
+                display:none;
+            }
+    
+            .hamburger{
+                display: inline-block;
+            }
+        }
+    }
+
+    main{
+        .container{
+            
+            .pitch-content{
+                width: 100%;
+
+                p{
+                    width: 100%;
+                }
+            }
+
+            .company-logo{
+                display:inline-flex;
+                
+                flex-wrap: wrap;
+                gap: 1.25rem;
+                justify-content: center;
+                
+                img{
+                    margin: 1rem;
+                }
+            }
+
+            .sample-work{
+                flex-direction: column;
+
+                .samples{
+                    img{
+                        overflow: hidden;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .experience{
+        .container{
+            padding:3rem 0rem;
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+        }
+    
+        &-title{
+            @include sub-heading;
+        }
+    
+        &-content{
+            p{
+                @include contents;
+                //margin-bottom: 1.75rem;
+            }
+    
+            p:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .invitation{
+        &-container{
+            width: 100%;
+        }
+
+        &-desc{
+            width: 100%;
+            
+        }
+
+        
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .container{
+        width:95%;
+    }
+
+    header{
+            
+        .container{
+            padding-top: 3rem;
+        
+            nav{
+                display: none;
+            }
+    
+            .action-link{
+                display:none;
+            }
+    
+            .hamburger{
+                display: inline-block;
+            }
+        }
+    }
+
+    main{
+        .container{
+            
+            .pitch-content{
+                width: 100%;
+
+                p{
+                    width: 100%;
+                }
+            }
+
+            .company-logo{
+                display:inline-flex;
+                
+                flex-wrap: wrap;
+                gap: 1.25rem;
+                justify-content: center;
+                
+                img{
+                    margin: 1rem;
+                }
+            }
+
+            .sample-work{
+                flex-direction: column;
+
+                .samples{
+                    img{
+                        overflow: hidden;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .experience{
+        .container{
+            padding:3rem 0rem;
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+        }
+    
+        &-title{
+            @include sub-heading;
+        }
+    
+        &-content{
+            p{
+                @include contents;
+                //margin-bottom: 1.75rem;
+            }
+    
+            p:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .invitation{
+        &-container{
+            width: 100%;
+        }
+
+        &-desc{
+            width: 100%;
+            
+        }
+
+        
+    }
+}
+
